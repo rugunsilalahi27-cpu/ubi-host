@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORMAUBI - Keripik Ubi Crispy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container navbar">
+            <div class="logo">DORMA<span>UBI</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                 
+            </ul>
+            
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="container hero-flex">
+            <div class="hero-text">
+                <span class="promo-badge">Gurihnya Lokal, Bangganya Nasional</span>
+                <h1>Keripik Ubi Crispy <br><span>DORMAUBI</span></h1>
+                <p>Usaha makanan ringan berbasis e-commerce yang menyajikan varian keripik ubi premium tanpa bahan pengawet.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn-primary">Lihat Produk</a>
+                    <a href="https://wa.me/6282289259620" class="btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat Admin
+                    </a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img src="keripik.png" alt="DORMAUBI Banner">
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="container section">
+        <div class="title-center">
+            <h2>Koleksi Varian <span>DORMAUBI</span></h2>
+            <p>Pilih varian favoritmu dan lanjut ke pembayaran</p>
+        </div>
+        
+        <div class="product-grid">
+            <div class="card">
+                <div class="card-img">
+                    <span class="tag">Favorit</span>
+                    <img src="ungu.jpeg" alt="Keripik Ubi Ungu">
+                </div>
+                <div class="card-body">
+                    <h3>Keripik Ubi Ungu</h3>
+                    <p>DORMAUBI Original</p>
+                    <div class="price">Rp 10.000</div>
+                    <div style="margin: 10px 0;">
+                        <label>Jumlah:</label>
+                        <input type="number" id="qty_1" value="1" min="1" style="width: 50px; text-align: center; padding: 5px;">
+                    </div>
+                    <button onclick="beliProduk('Keripik Ubi Ungu', 10000, 'qty_1')" class="btn-buy">
+                        <i class="fas fa-shopping-cart"></i> Pilih & Checkout
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <span class="tag">Renyah</span>
+                    <img src="kuning.jpeg" alt="Keripik Ubi Kuning">
+                </div>
+                <div class="card-body">
+                    <h3>Keripik Ubi Kuning</h3>
+                    <p>DORMAUBI Original</p>
+                    <div class="price">Rp 10.000</div>
+                    <div style="margin: 10px 0;">
+                        <label>Jumlah:</label>
+                        <input type="number" id="qty_2" value="1" min="1" style="width: 50px; text-align: center; padding: 5px;">
+                    </div>
+                    <button onclick="beliProduk('Keripik Ubi Kuning', 10000, 'qty_2')" class="btn-buy">
+                        <i class="fas fa-shopping-cart"></i> Pilih & Checkout
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <span class="tag">Best Seller</span>
+                    <img src="pedas.png" alt="Pedas Manis">
+                </div>
+                <div class="card-body">
+                    <h3>Varian Pedas Manis</h3>
+                    <p>DORMAUBI Spesial</p>
+                    <div class="price">Rp 12.000</div>
+                    <div style="margin: 10px 0;">
+                        <label>Jumlah:</label>
+                        <input type="number" id="qty_3" value="1" min="1" style="width: 50px; text-align: center; padding: 5px;">
+                    </div>
+                    <button onclick="beliProduk('Varian Pedas Manis', 12000, 'qty_3')" class="btn-buy">
+                        <i class="fas fa-shopping-cart"></i> Pilih & Checkout
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    <span class="tag">Terbaru</span>
+                    <img src="keripik.png" alt="Mix Varian">
+                </div>
+                <div class="card-body">
+                    <h3>Mix Varian</h3>
+                    <p>DORMAUBI Campur</p>
+                    <div class="price">Rp 15.000</div>
+                    <div style="margin: 10px 0;">
+                        <label>Jumlah:</label>
+                        <input type="number" id="qty_4" value="1" min="1" style="width: 50px; text-align: center; padding: 5px;">
+                    </div>
+                    <button onclick="beliProduk('Mix Varian', 15000, 'qty_4')" class="btn-buy">
+                        <i class="fas fa-shopping-cart"></i> Pilih & Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container section" style="background: #fdf8ff; border-radius: 30px; margin-bottom: 50px;">
+        <div class="footer-grid" style="padding: 40px;">
+            <div style="text-align: center;">
+                <i class="fas fa-leaf" style="font-size: 40px; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Alami</h4>
+                <p>Tanpa pengawet buatan.</p>
+            </div>
+            <div style="text-align: center;">
+                <i class="fas fa-truck" style="font-size: 40px; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Cepat</h4>
+                <p>Sistem pengiriman kilat.</p>
+            </div>
+            <div style="text-align: center;">
+                <i class="fas fa-wallet" style="font-size: 40px; color: var(--primary); margin-bottom: 10px;"></i>
+                <h4>Mudah</h4>
+                <p>Bayar via E-Wallet & Bank.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p>&copy; 2024 Rugun Dormavita Silalahi - TIA22. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function beliProduk(nama, harga, idQty) {
+            const jumlah = document.getElementById(idQty).value;
+            
+            // Simpan data ke LocalStorage agar bisa dibaca di checkout.html
+            const pesanan = {
+                nama: nama,
+                harga: harga,
+                qty: jumlah
+            };
+            
+            localStorage.setItem('dormaubi_cart', JSON.stringify(pesanan));
+            
+            // Pindah ke halaman checkout.html
+            window.location.href = 'checkout.html';
+        }
+    </script>
+
+</body>
+</html>
